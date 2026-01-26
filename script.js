@@ -6,6 +6,12 @@ addExpenseBtn.addEventListener("click",expenseadd);
 
 
 function expenseadd () {
-    amount = amountInput.value.trim();
+    let amount = amountInput.value.trim();
+    let category = categorySelect.value;
     if (amount === "") return;
+    if (category === "") return;
+
+    amount.type = "number";
+    if (amount <= 0 ) return;
+    if (amount === 0) return;
 }
