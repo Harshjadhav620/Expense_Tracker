@@ -11,7 +11,6 @@ function expenseadd () {
     if (amount === "") return;
     if (category === "") return;
 
-    amount.type = "number";
+    amount = Number(amount);
     if (amount <= 0 ) return;
-    if (amount === 0) return;
 }
