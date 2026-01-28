@@ -12,5 +12,15 @@ function expenseadd () {
     if (category === "") return;
 
     amount = Number(amount);
-    if (amount <= 0 ) return;    
+    if (amount <= 0 ) return;  
+    
+    const obj = {
+    amount: amount,    
+    category: category, 
+    id: unique_id,      
+    date: current_date  
+};
+    data.push(obj)
 }
+const data = [];
+
