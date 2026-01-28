@@ -17,8 +17,8 @@ function expenseadd () {
     const obj = {
     amount: amount,    
     category: category, 
-    id: unique_id,      
-    date: current_date  
+    id: Date.now(),      
+    date: new Date()  
 };
     data.push(obj)
 }
