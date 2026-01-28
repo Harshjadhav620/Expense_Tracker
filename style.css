@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+    width: 450px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px black dotted;
+    box-shadow: 0 12px 30px rgba(0,0,0,1.0);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    color: black;
+}
