@@ -17,7 +17,7 @@ body {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    border: 1px black dotted;
+    border: 1px black solid;
     box-shadow: 0 12px 30px rgba(0,0,0,1.0);
 }
 
@@ -25,11 +25,12 @@ h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    text-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     color: black;
 }
 
 #input_container {
+    display: flex;
     justify-content: center;
-    
+    gap:10px;
 }
