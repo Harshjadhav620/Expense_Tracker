@@ -13,12 +13,16 @@ body {
 }
 
 .app {
-    width: 600px;
+    width: auto;
     background: white;
     padding: 30px;
     border-radius: 10px;
     border: 1px black solid;
     box-shadow: 0 12px 30px rgba(0,0,0,1.0);
+}
+.app:hover{
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.6);
 }
 
 h1 {
@@ -33,4 +37,56 @@ h1 {
     display: flex;
     justify-content: center;
     gap:10px;
+    margin-bottom: 20px;
+}
+
+#amount{
+    flex: 1;
+    padding: 15px;
+    font-size: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 10px;
+}
+#amount:hover{
+    transform: scale(1.05);
+}
+#amount:focus{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    outline: none;
+}
+
+#category_chart{
+    flex: 1;
+    padding: 15px;
+    font-size: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 10px;
+}
+#category_chart:hover{
+    transform: scale(1.05);
+}
+#category_chart:focus{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    outline: none;
+}
+
+#add_btn{
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+}
+#add_btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+#add_btn:active{
+    transform: scale(0.97);
 }
