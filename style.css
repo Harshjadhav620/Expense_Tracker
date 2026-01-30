@@ -131,3 +131,31 @@ h1 {
 #edit_btn:active{
     transform: scale(0.97);
 }
+
+#total_and_avg {
+    width: 400px;
+    height: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px black solid;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#uncategorized {
+    width: 400px;
+    height: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px black solid;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
