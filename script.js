@@ -20,7 +20,10 @@ function expenseadd () {
     id: Date.now(),      
     date: new Date()  
 };
-    data.push(obj)
+    data.push(obj);
+    amountInput.value = "";
+    categorySelect.value = "";
 }
+
 const data = [];
 
