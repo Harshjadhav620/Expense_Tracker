@@ -46,6 +46,7 @@ h1 {
     font-size: 15px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 #amount:hover{
     transform: scale(1.05);
@@ -62,6 +63,7 @@ h1 {
     font-size: 15px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 #category_chart:hover{
     transform: scale(1.05);
@@ -82,11 +84,50 @@ h1 {
     border-radius: 8px;
     font-weight: 600;
     font-size: 15px;
+    margin-bottom: 20px;
 }
 #add_btn:hover{
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 #add_btn:active{
+    transform: scale(0.97);
+}
+
+#expense_display{
+    width: 400px;
+    height: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px black solid;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#expenselist {
+    margin-bottom: 20px;
+}
+
+#edit_btn{
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+#edit_btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+#edit_btn:active{
     transform: scale(0.97);
 }
