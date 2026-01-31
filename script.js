@@ -26,20 +26,14 @@ function expenseadd () {
     amountInput.value = "";
     categorySelect.value = "";
 
-    let display = document.createElement("div")
-    display.classList.add("task");
-
     let span1 = document.createElement("span");
     span1.innerText = `₹ ${obj.amount}`;
 
     let span2 = document.createElement("span")
     span2.innerText = obj.category;
 
-    display.appendChild(span1);
-    display.appendChild(span2);
-
-
-    expensedisplay.appendChild(display);
+    expensedisplay.appendChild(span1);
+    expensedisplay.appendChild(span2);
 
 }
 
