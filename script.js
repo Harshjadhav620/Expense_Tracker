@@ -26,14 +26,19 @@ function expenseadd () {
     amountInput.value = "";
     categorySelect.value = "";
 
+
+    let display = document.getElementById("displayscreen");
+
     let span1 = document.createElement("span");
     span1.innerText = `₹ ${obj.amount}`;
 
     let span2 = document.createElement("span")
     span2.innerText = obj.category;
 
-    expensedisplay.appendChild(span1);
-    expensedisplay.appendChild(span2);
+    display.appendChild(span1);
+    display.appendChild(span2);
+
+    expensedisplay.appendChild(display);
 
 }
 

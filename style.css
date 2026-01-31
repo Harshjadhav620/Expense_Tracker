@@ -102,9 +102,6 @@ h1 {
     border-radius: 10px;
     border: 1px black solid;
     box-shadow: 0 12px 30px rgba(0,0,0,0.2);
-     display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 20px;
 }
 
@@ -171,5 +168,20 @@ h1 {
     flex-direction: column;
     gap: 5px;
 }
+
+.displayscreen {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 12px 14px;
+    gap: 12px;
+    background-color: #f5f7fa;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    font-size: 16px;
+    transform-origin: center;
+}
+
 
 
