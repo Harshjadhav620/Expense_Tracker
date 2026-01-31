@@ -3,9 +3,10 @@ let categorySelect = document.getElementById("category_chart");
 let addExpenseBtn = document.getElementById("add_btn");
 let expensedisplay = document.getElementById("expense_display")
 
+
 addExpenseBtn.addEventListener("click",expenseadd);
 
-
+const data = [];
 function expenseadd () {
     let amount = amountInput.value.trim();
     let category = categorySelect.value;
@@ -42,5 +43,21 @@ function expenseadd () {
 
 }
 
-const data = [];
+function calculateTotalAndAverage() {
+    if (data.length === 0) return;
+    let total = 0
+    for (let i=0; i<data.length; i++) {
+        total = total+data[i].amount;
+    } 
+    let average = total/data.length;
+
+
+    let span1 = document.getElementById("total");
+    span1.innerText=total;
+
+    let span2 = document.getElementById("average");
+    span2.innerText = average;
+}
+
+
 
