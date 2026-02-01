@@ -194,9 +194,31 @@ h1 {
     font-weight: 500;
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
-
 .task:hover {
     transform: scale(1.03);
     background-color: #e9edf3;
 }
 
+
+
+#total_and_avg h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 14px;
+    background-color: #f5f7fa;
+    border-radius: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+#total_and_avg h4:hover {
+    background-color: #e9edf3;
+    transform: scale(1.02);
+}
+#total_and_avg span {
+    font-weight: 600;
+}
