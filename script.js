@@ -1,12 +1,15 @@
 let amountInput = document.getElementById("amount");
 let categorySelect = document.getElementById("category_chart");
 let addExpenseBtn = document.getElementById("add_btn");
-let expensedisplay = document.getElementById("expense_display")
+let displayscreen = document.getElementById("displayscreen")
 
+let totalSpan = document.getElementById("total");
+let averageSpan = document.getElementById("average");
+
+const data = [];
 
 addExpenseBtn.addEventListener("click",expenseadd);
 
-const data = [];
 function expenseadd () {
     let amount = amountInput.value.trim();
     let category = categorySelect.value;
@@ -27,18 +30,21 @@ function expenseadd () {
     categorySelect.value = "";
 
 
-    let display = document.getElementById("displayscreen");
+    let task = document.createElement("div");
+    task.classList.add("task");
 
-    let span1 = document.createElement("span");
-    span1.innerText = `₹ ${obj.amount}`;
+    let amountSpan = document.createElement("span");
+    amountSpan.innerText = `₹ ${obj.amount}`;
 
-    let span2 = document.createElement("span")
-    span2.innerText = obj.category;
+    let categorySpan = document.createElement("span")
+    categorySpan.innerText = obj.category;
 
-    display.appendChild(span1);
-    display.appendChild(span2);
+    task.appendChild(amountSpan);
+    task.appendChild(categorySpan);
 
-    expensedisplay.appendChild(display);
+    displayscreen.appendChild(task);
+
+    calculateTotalAndAverage();
 
 }
 
@@ -51,11 +57,8 @@ function calculateTotalAndAverage() {
     let average = total/data.length;
 
 
-    let span1 = document.getElementById("total");
-    span1.innerText=total;
-
-    let span2 = document.getElementById("average");
-    span2.innerText = average;
+    totalSpan.innerText = total;
+    averageSpan.innerText = average.toFixed(2);
 }
 
 

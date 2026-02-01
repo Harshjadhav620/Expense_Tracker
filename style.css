@@ -179,19 +179,24 @@ h1 {
     gap: 5px;
 }
 
-.displayscreen {
+#displayscreen {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.task {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
     padding: 12px 14px;
-    gap: 12px;
     background-color: #f5f7fa;
     border-radius: 10px;
     font-weight: 500;
     transition: transform 0.2s ease, background-color 0.2s ease;
-    font-size: 16px;
-    transform-origin: center;
 }
 
-
+.task:hover {
+    transform: scale(1.03);
+    background-color: #e9edf3;
+}
 
