@@ -103,7 +103,17 @@ h1 {
     border: 1px black solid;
     box-shadow: 0 12px 30px rgba(0,0,0,0.2);
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
+
+#expense_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
 
 #expenselist {
     margin-bottom: 20px;
