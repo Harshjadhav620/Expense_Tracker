@@ -77,7 +77,7 @@ let reset_btn = document.getElementById("rst_btn");
 reset_btn.addEventListener("click",reset_fun);
 
 function reset_fun() {
-    const ok = confirm("Are you sure you want to delete all the expense?");
+    const ok = confirm("Are you sure you want to reset all the expense?");
     if (!ok) return;
 
     data.length=0;
