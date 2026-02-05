@@ -33,6 +33,26 @@ h1 {
     color: black;
 }
 
+#rst_btn{
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 20px
+}
+#rst_btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+#rst_btn:active{
+    transform: scale(0.97);
+}
+
 #input_container {
     display: flex;
     justify-content: center;
