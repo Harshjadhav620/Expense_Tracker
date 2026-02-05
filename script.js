@@ -72,6 +72,14 @@ function calculateTotalAndAverage() {
     averageSpan.innerText = average.toFixed(2);
 }
 
+let reset_btn = document.getElementById("rst_btn");
+
+reset_btn.addEventListener("click",reset_fun);
+
+function reset_fun() {
+    
+}
+
 
 
 
