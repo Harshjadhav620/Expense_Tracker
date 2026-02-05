@@ -77,12 +77,17 @@ let reset_btn = document.getElementById("rst_btn");
 reset_btn.addEventListener("click",reset_fun);
 
 function reset_fun() {
-    let ok = confirm("Are you sure you want to delete all the expense?");
+    const ok = confirm("Are you sure you want to delete all the expense?");
     if (!ok) return;
 
-    data = [];
+    data.length=0;
 
-    localStorage.removeItem("data");
+    localStorage.removeItem("save");
+
+    displayscreen.innerHTML = "";
+
+    totalSpan.innerText = "0";
+    averageSpan.innerText = "0.00";
 }
 
 
