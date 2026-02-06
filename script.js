@@ -90,6 +90,9 @@ function reset_fun() {
     averageSpan.innerText = "0.00";
 }
 
+function Uncategorized_list() {
+
+}
 
 
 
