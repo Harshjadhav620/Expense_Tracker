@@ -91,7 +91,12 @@ function reset_fun() {
 }
 
 function Uncategorized_list() {
+    let category = categorySelect.value;
+    if (category === "") return;
 
+    if (category === "other") {
+        
+    }
 }
 
 
