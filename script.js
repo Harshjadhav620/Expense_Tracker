@@ -2,6 +2,7 @@ let amountInput = document.getElementById("amount");
 let categorySelect = document.getElementById("category_chart");
 let addExpenseBtn = document.getElementById("add_btn");
 let displayscreen = document.getElementById("displayscreen");
+let uncategorizedBox = document.getElementById("uncategorized");
 
 let totalSpan = document.getElementById("total");
 let averageSpan = document.getElementById("average");
@@ -20,7 +21,11 @@ function expenseadd () {
     if (category === "") return;
 
     amount = Number(amount);
-    if (amount <= 0 ) return;  
+    if (amount <= 0 ) return; 
+    
+     if (category === "") {
+        category = "Other";
+    }
     
     const obj = {
     amount: amount,    
@@ -52,7 +57,11 @@ function renderExpense(obj) {
     task.appendChild(amountSpan);
     task.appendChild(categorySpan);
 
-    displayscreen.appendChild(task);
+    if (obj.category === "Other") {
+        uncategorizedBox.appendChild(task);
+    } else {
+        displayscreen.appendChild(task);
+    }
 }
 
 function calculateTotalAndAverage() {
@@ -90,12 +99,6 @@ function reset_fun() {
     averageSpan.innerText = "0.00";
 }
 
-function Uncategorized_list() {
-    for (let i =0; i<data.length; i++) {
-        if (data[i].category === "Other") {
-        }
-    }
-}
 
 
 
