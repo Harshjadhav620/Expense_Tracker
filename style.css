@@ -209,6 +209,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
     margin-bottom: 10px;
     padding: 12px 16px;
     background-color: #f5f7fa;
@@ -243,4 +244,10 @@ h1 {
 }
 #total_and_avg span {
     font-weight: 600;
+}
+
+#uncategorized {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
