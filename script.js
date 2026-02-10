@@ -33,9 +33,10 @@ function expenseadd () {
     id: Date.now(),      
     date: new Date()  
 };
+
     data.push(obj);
     localStorage.setItem("save",JSON.stringify(data));
-
+    
     renderExpense(obj);
     calculateTotalAndAverage();
 
@@ -62,6 +63,7 @@ function renderExpense(obj) {
     } else {
         displayscreen.appendChild(task);
     }
+
 }
 
 function calculateTotalAndAverage() {
@@ -95,8 +97,12 @@ function reset_fun() {
 
     displayscreen.innerHTML = "";
 
+    uncategorizedBox.innerText = "";
+
     totalSpan.innerText = "0";
     averageSpan.innerText = "0.00";
+
+    
 }
 
 
