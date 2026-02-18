@@ -97,7 +97,8 @@ function reset_fun() {
 
     displayscreen.innerHTML = "";
 
-    uncategorizedBox.innerText = "";
+    const uncatTasks = uncategorizedBox.querySelectorAll(".task");
+    uncatTasks.forEach(task => task.remove());
 
     totalSpan.innerText = "0";
     averageSpan.innerText = "0.00";
