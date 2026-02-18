@@ -101,9 +101,17 @@ function reset_fun() {
     uncatTasks.forEach(task => task.remove());
 
     totalSpan.innerText = "0";
-    averageSpan.innerText = "0.00";
+    averageSpan.innerText = "0.00";   
+}
 
-    
+let editbtn = document.getElementById("edit_btn");
+
+editbtn.addEventListener("click",edit_fun);
+
+function edit_fun() {
+    const ok = confirm("Are you sure you want to edit the expense?");
+    if (!ok) return;
+
 }
 
 
