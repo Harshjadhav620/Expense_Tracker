@@ -49,6 +49,8 @@ function renderExpense(obj) {
     let task = document.createElement("div");
     task.classList.add("task");
 
+    task.dataset.id = obj.id;
+
     let amountSpan = document.createElement("span");
     amountSpan.innerText = `₹ ${obj.amount}`;
 
